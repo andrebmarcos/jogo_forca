@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JOGO DA FORCA</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<section class="caixa">
+			<h1 class="titulo">Jogo da Forca</h1>         
+		</section>
+	</header>
+
+	<main>
+
+		
+			<div id="div-desaparece" class="botoes-home">
+				<input class="btn-iniciar" type="submit" value="Começar a jogar" id="iniciar-jogo" onclick="iniciarJogo()">
+				<input class="btn-palavra" type="submit" value="Adicionar palavra" onclick="novaPalavra()">
+			</div>
+			<div id="div-aparece-forca" class="canvas">
+				<canvas id="forca" height="400px"width="1200px"></canvas>
+				<div class="botoes-canvas">
+					<input class="btn-novo-jogo" type="submit" value="Novo jogo" onclick="iniciarJogo()">
+					<input class="btn-desistir" type="submit" value="Desistir" id="desistir" onclick="recarregar()">
+				</div>	
+			</div >	
+			<div id="caixa-nova-palavra" class="nova-palavra">
+				<textarea id="input-nova-palavra" class="inputTexto" cols="40" rows="5" placeholder="Digite uma nova palavra"></textarea>
+				<div>
+					<input class="btn-salvar-iniciar" type="submit" value="Salvar e começar" id="salvar-iniciar" onclick="addNovaPalavra()">
+					<input class="btn-cancela" type="submit" value="Cancelar" id="cancelar" onclick="recarregar()">
+				</div>
+			</div>
+								
+			</div>
+			<div class="sublinhado">
+			
+			</div>
+		
+
+	</main>
+
+	<footer>
+		<a href="https://www.linkedin.com/in/andrebmarcos/"><img src="imagem/linkedin_2.png" alt="Logo Linkedln"></a>
+		<a href="https://github.com/andrebmarcos"><img src="imagem/git_2.png" alt="Logo GitHub"></a>
+
+		<p class="copyright">&copy; Copyright André Marcos</p>
+	</footer>
+	<script src="forca.js"></script>
+	<script src="canvas.js"></script>
+	
+</body>
+</html>
+

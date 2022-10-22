@@ -1,0 +1,124 @@
+html{
+	background: #6494ed;;
+	font-family: 'Inter', sans-serif;
+}
+body {
+	min-width: 1224px;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+header img {
+	padding: 44px 0 31.09px 48px;
+
+}
+a{
+	cursor: pointer;
+}
+.titulo{
+    text-align: center;
+    text-shadow: 2px 2px white;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#div-aparece-forca{
+    padding-left: 10%;
+	background: #6494ed;;
+}
+
+#div-desaparece,.nova-palavra { 
+	padding-left: 40%;
+	padding-right: 40%;
+	padding-top: 2%;
+	padding-bottom: 2%;	
+}
+
+.botoes-canvas{
+	padding-left: 25%;
+}
+
+
+.btn-iniciar {
+    box-shadow: 2px 2px black;
+    border-radius: 60px;
+    background: green;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    align-items: center;
+    margin-top: 250px;
+	width:332px;
+	padding: 20px;
+	margin: 20px;
+	cursor: pointer;
+}
+
+.btn-palavra {
+	box-shadow: 2px 2px black;
+    border-radius: 60px;
+    background: yellow;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    align-items: center;
+    margin-top: 250px;
+	width:332px;
+	padding: 20px;
+	margin: 20px;
+	cursor: pointer;
+}
+
+.btn-salvar-iniciar,.btn-novo-jogo {
+	box-shadow: 2px 2px black;
+    border-radius: 60px;
+    background: green;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    align-items: center;
+    margin-top: 250px;
+	width:228px;
+	padding: 20px;
+	margin: 20px;
+	cursor: pointer;
+}
+
+.btn-cancela,.btn-desistir {
+	box-shadow: 2px 2px black;
+    border-radius: 60px;
+    background: RED;
+    color: BLACK;
+    font-weight: bold;
+    font-size: 20px;
+    align-items: center;
+    margin-top: 250px;
+	width:228px;
+	padding: 20px;
+	margin: 20px;
+	cursor: pointer;
+}
+input:hover {
+	transform: scale(1.03);
+}
+
+
+
+footer {
+	text-align: center;
+	padding: 20px 40px;
+}
+footer img {
+	margin: 40px 10px 0;
+	width: 2%;
+
+}
+.copyright {
+	font-size: 13px;
+	margin: 20px 0 0;
+    color: white;
+}
