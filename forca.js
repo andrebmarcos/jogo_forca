@@ -93,7 +93,7 @@ function iniciarJogo(){
 	document.onkeydown = teclaClicada	
 }
 
-function teclaClicada(e){
+function teclaClicada("touchstart",e){
 	teclaAdic = e.key.toUpperCase();
 	verificaFimDeJogo()
 	if(letras.includes(teclaAdic)){
