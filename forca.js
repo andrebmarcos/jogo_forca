@@ -138,28 +138,26 @@ function verificaFimDeJogo(){
 
 
 
-function keyEvent(event) {
-	var key = event.keyCode || event.which;
-	var keychar = String.fromCharCode(key);
-	if (key == exampleKey) {
-	  metaChar = true;
-	}
-	if (key != exampleKey) {
-	  if (metaChar) {
-		alert("Combination of metaKey + " + keychar);
-		metaChar = false;
-	  } else {
-		alert("Key pressed " + key);
-	  }
-	}
-  }
-  
-  function metaKeyUp (event) {
-	var key = event.keyCode || event.which;
-  
-	if (key == exampleKey) {
-	  metaChar = false;
-	}
-  }
+// target a specific keyboard, or use $('.ui-keyboard-input') to target all
+$('#keyboard')
+  // keyboard plugin - see the full list of options above.
+  .keyboard(options1)
+  // jQuery UI autocomplete
+  // go to http://jqueryui.com/autocomplete/ for a complete
+  // list of options
+  .autocomplete(options2)
+  // keyboard autocomplete extension
+  .addAutocomplete({
+    // set position of autocomplete popup
+    position: {
+      of: null,
+      my: 'right top',
+      at: 'left top',
+      collision: 'flip'
+    },
+    // custom autocomplete widget settings
+    data: '',
+    events: ''
+  });
 
 recarregar();
